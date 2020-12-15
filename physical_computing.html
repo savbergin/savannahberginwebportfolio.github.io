@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Savannah Bergin | Physical Computing </title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<div class="hamburger-menu">
+    <i class="ion-navicon open"></i>
+    <i class="ion-android-close close"></i>
+</div>
+<nav class="nav">
+    <div class="intro">
+        <img src="images/signature_logo.png" />
+        <h1 class="intro-heading">Savannah Bergin</h1>
+        
+        
+        <h2 class="intro-subhead">UXIX STUDENT @ UNIVERSITY OF LIMERICK</h2>
+    </div>
+
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link">Get in touch</a>
+        </li>
+    </ul>
+
+    <div class="social-media-wrapper">
+        <span>Follow me on</span>
+        <div class="social-media">
+            <a href="#" class="sm-link"><i class="ion-social-instagram"></i></a>
+            <a href="#" class="sm-link"><i class="ion-social-facebook"></i></a>
+            <a href="#" class="sm-link"><i class="ion-social-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright-notice">
+        <p>Copyright &copy; 2020. Savannah Bergin</p>
+    </div>
+</nav>
+<main class="main">
+    <section class="heropc">
+        <a href="#about" class="scroll-down">
+            <div class="mouse">
+                <span></span>
+            </div>
+            <div class="arrow">
+                <span></span>
+            </div>
+        </a>
+    </section>
+    
+
+    <section class="about-me" id="about">
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small">Physical Computing</span>
+                
+            </div>
+            <div class="about-me-intro">
+                <div class="intro-description">
+                    <p>
+                        <span>My Final Project:</span>
+                        This project involves the design and implementation of Arduino electronics hardware and software components to construct an interactive prototype device that aids real-life problem-solving. For this project, I conducted various research by the exploration of papers and publications, and literature on our chosen topic. 
+                    </p>
+                    <p>
+                        My response to the literature research we uncovered and ‘Covid-19 Protect and Control’ topic utilising the Arduino and electronics is the development of an Ultrasonic Social Distancing Visor that acts as a wearable assistive technology prototype, designed particularly for those who are visually impaired. The goal behind this concept of the TES (The Eight Sense) Visor is to assist individuals who are most vulnerable and finding social distancing extremely difficult, acting as a new ‘8th sense’ that impacts their mobility. 
+                        
+                    </p>
+                    <p> 
+                        Humans are rationed by their sensory world; if we lose a sense, we can attempt to replace it or readdress it to another sense. The motivation behind my Arduino prototype with this in mind is to design new beneficial peripherals for the user by utilising technology to add senses, not just replace or redirect them. The Arduino prototype affords the user to alternatively “see” if there’s a person or object that’s closer than a 2 meter distance; not by using their eyes, but by relying on the device’s sensors to pick up on proximity and feel two different vibrations from the servo motor when there is a person/object in close proximity or not . This intervention acts as a new sensory mechanism by giving the user feedback to act on consistently. 
+                    </p>
+                    <p> Given the capacity of this project and what I could build with the Arduino, I investigated in my research how electronics could expand our senses as an initiative to benefit lives of those most vulnerable, and build a device that could empower these individuals to continue their daily lives, mobilise freely and relieve their interactions knowing they are protected under the circumstances of a global pandemic.
+                    </p>
+                    <p>
+                        <span>Arduino Building Process & Important Code Configuration: </span> This device prototype was built with the use of a HC-SR04 ultrasonic sensor, servo motor, jumper wires, and 9V battery and battery holder. I ordered  extra parts such as the ultrasonic sensor, jumper wires, and battery shell from IrishElectronics.ie to facilitate the curation of my interactive system and obtained the rest of the parts from my arduino kit.
+                    </p>
+                    <p> After the circuit diagram was drawn accordingly, I connected the components accordingly starting with the 9V battery to make it portable. I connected the  HC-SR04 ultrasonic sensor to the Arduino's pins 12 (trig) and 11(echo). I also attached the servo motor with jumper wires to pin 9, and intacted it to the back of the ultrasonic sensor. I decided to include a servo motor to initiate a gentle movement. It will lightly vibrate against the users forehead while turning if an object/person is deleted in 180cm proximity or closer. This will evade an irritable sensation to the user and will not cause disturbance to the person standing nearby. Following setup, I included a new library for the HC-SR04. I uploaded the code once it was finalised to the board via Arduino IDE, and surveilled the COM4 serial monitor calculating it's distance outputs in real-time to ensure it was working correctly.                        
+                  </p>
+                    
+                     <p>
+                        <span>Reflection & Future Developments:</span> The TES Visors possibilities are boundless, and it is not limited to those with a visual impairment. I considered different use cases in which the TES visor could be applied to positively impact people’s lives during a pandemic with future developments. This entails making the ultrasonic visor powered by the Arduino even more efficient in my next prototype by providing feedback to them through the intensity of the vibrations they felt as they approached something closer or moved away from something. By regulating vibration intensity of a vibration motor with FSR Sensor, this could have the potential to replace current ways they navigate their surroundings and give them more independence, by replacing a white cane or guide dog that they currently use while also keeping them physically protected from germs and bacteria. Another future development I considered is allowing the user to select the distance at which they desire to be alerted.  Furthermore, implementing a phototransistor as an alternative sensor to act as a radar could identify objects when it is angled in the user’s direction. 
+                    </p>
+                    <p> As tech entrepreneur Dr. Fernando Albertoriox wrote in a Forbes article, ‘Wearable technologies that can augment human abilities have a big role to play in creating equity for disabled people through bridging the information gap and empowering and enhancing the senses.” In light of this, it’s future developments could potentially solve some real-world problems and alleviate the most vulnerable when trying to social distance.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+<section class="my-portfolio" id="portfolio">
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small"> The Interactive System </span>
+                <h5 class="section-head-large"> Ultrasonic Social Distancing Visor </h5>
+            </div>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEQZE1Ym3o&#x2F;view?embed">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEQZE1Ym3o&#x2F;view?utm_content=DAEQZE1Ym3o&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+        </div>
+        
+</section>
+        
+    
+    
+    
+    
+
+    <section class="my-expertise" id="skills">
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small">Main Skills Involved </span>
+                <h5 class="section-head-large">Arduino & Electronics </h5>
+            </div>
+            <div class="grid">
+                <div class="grid-item colour">
+                            <span class="item-icon">
+                                <i class="ion-settings"></i>
+                            </span>
+                    <h3 class="item-heading">Programming</h3>
+                </div>
+                <div class="grid-item colour">
+                            <span class="item-icon">
+                                <i class="ion-settings"></i>
+                            </span>
+                    <h3 class="item-heading">Arduino & Electronics</h3>
+                </div>
+               <div class="grid-item colour">
+                            <span class="item-icon">
+                                <i class="ion-settings"></i>
+                            </span>
+                    <h3 class="item-heading">User & Participatory Design </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section class="pc_motto">
+        <div class="container">
+            <div class="quote-wrapper">
+               
+                <blockquote class="quote"> I aspire to utilise the skills and competencies I have gained from physical computing and Arduino Programming  to continue making iterations of this device, in hopes that I could make a positive difference to the global pandemic and society in the future. </blockquote>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section class="work-experience" id="experience">
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small">Research & Literature</span>
+                <h5 class="section-head-large">Main Findings:</h5>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-heading">
+                        <h3 class="timeline-entry-name">Arduino & Makers Community Initatives </h3>
+                    </div>
+                    <p>
+                        We discovered initiatives in the Arduino and Makers community, contributing remarkable responses to fight the global pandemic and protect society. Valeria Dammicco and Lucia Corsini quantified these responses in the UK during Plan C Live, elaborating on the ‘notable efforts among the maker community to support the production of personal protective equipment (PPE) for the NHS’. Makers across the world have been coordinating with their regional and local networks since March to offer resolutions for society and the health-care sector. Responses vary from emergency ventilators to DIY face masks, ‘revealing the maker community’s ability and agility in quickly prototyping designs, scaling production, and repurposing supply chains.’ 3D Crowd UK, A home-based 3D printing community promptly raised crowdfunding of £150,000 to organize rapid development, production, and delivery of face shields and PPE for frontline staff. This exceptional initiative resulted in 200,000 face shields being provided to 90 NHS Trusts and care homes. Cambridge Makespace Director, Ward Hills, stated these responses ‘have shown that we’re very capable, as a community of makers around the world, of producing quickly and efficiently some fantastic innovative products’. My main takeaway from these findings is the need to be considerate and empathetic of frontline workers and those most vulnerable who will be put to the utmost test coping with the impact of the global pandemic, and that every contribution from the Arduino Makers community has made a difference. 
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-heading">
+                        <h3 class="timeline-entry-name">Neglegence to Visually Impaired during Pandemic</h3>
+                    </div>
+                    <p>
+                        Another aspect of research that came to our attention is that some people are finding social distancing more difficult than others. The visually impaired community have expressed significant concerns adapting to these changes, ‘struggling to keep socially distanced’ and ‘be aware of other precautions’. The Royal National Institute of Blind People (RNIB) published in a report that 2/3 visually impaired persons feel they have become ‘less independent since the start of lockdown’. Furthermore, the World Economic Forum stated that ‘those who are visually impaired and shop independently has fallen to 14% from 28%’. Simultaneously, the percentage of individuals depending on somebody to shop for them has soared from 18% to 49%. Findings from this source indicated that they fell ‘open to criticism’ by failing to social distance and they are fearful of leaving their homes as it ‘potentially raises the risk of contracting COVID-19’. Deafblind UK and partially sighted people also expressed concerns to Sky News that they have been shouted at by the public whilst food shopping and getting out for walks, and they have come to the conclusion that it’s ‘not worth their time’ leaving their homes. As we try to navigate through the coronavirus health crisis, behaviour analysts are taking into consideration how best to support families, by advocating assistive technologies as ‘essential’ to ensure the health and safety of those living with disabilities. A spokesperson from Enable Ireland stated to Silicon Republic that healthcare staff and families are ‘seeing the benefits of using mainstream technologies to strengthen or build communications that they might not have had before.’
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-heading">
+                        <h3 class="timeline-entry-name"> Relationship between Technology & Human Interaction </h3>
+                        
+                    </div>
+                    <p>
+                        Lastly, we explored the effects of technology on human interaction as a means to inform our design considerations for building our Arduino interactive systems, and incorporate a human-driven design approach. Adding the human element to our design approach should ‘ focus on the early phases of design, be strongly future-oriented and aim to contribute to innovation for a sustainable society and better quality of life in the future.’ Technology has abetted us to bridge a global cavity by connecting us together digitally, while at the same time, isolating us physically by ‘virtually distancing’ ourselves from those closest to us. The Brainspire illustrated the meaning of  virtual distancing in an online publication, stating ‘In the modern day, many people live in the digital world more than the real world’. They also reflected its significant effects of reducing intimacy, having direct ‘affects the way people operate’, ‘the values and expectations people have’, and ‘the way people think about others’. One of the paramount reasons why technology implementations have  had these negative effects on human interaction is the lack of consideration for the essential human component. On the contrary, technology has the aptitude to bridge gaps when it is used correctly. Technology has impacted communication by connecting us to other people worldwide, and increased efficiency in our daily lives. Simultaneously, it has given people all over the world ‘the opportunity to engage with others in a powerful, albeit, different way.’
+                    </p>
+                    <p>
+                        We explored different perspectives from spearheads in the fields of HCI and uncovered their deductions in a recent panel discussion at Stanford University.  As physician-author Abraham Verghese stated, “Technology is hugely important, it’s going to make us better and better – but it’s not going to take away the importance of human interaction.” On the contrary, Judy Wajcam proclaimed “If you actually look at what people do with their technologies… people do amazing, different, contradictory things, and will tell you in the same sentence that they love and hate the machines. They live fine with all these contradictions!”
+                    </p>                    
+                </div>
+            </div>
+<section>                
+   <div class="call-to-action">
+                    <p>
+                        Thanks for checking out this project! Back to Home? Or maybe see another?
+                    </p>
+                    <a href="index.html" class="btn cta-btn">Home</a>
+                    <a href="interactiondesign.html" class="btn cta-btn">Next Project - Interaction Design </a>
+                </div>
+      </section>
+        </div>
+    </section>
+    
+    
+ 
+</main>
+<script src="main.js"></script>
+</body>
+</html>

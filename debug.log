@@ -1,0 +1,4 @@
+[1214/024508.536:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1214/031935.354:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
+[1214/060037.516:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\savbe\AppData\Roaming\Brackets\live-dev-profile\Crashpad\attachments\cf60410f-8694-44e3-b91b-545a3317f210: The system cannot find the path specified. (0x3)
+[1215/132534.711:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
