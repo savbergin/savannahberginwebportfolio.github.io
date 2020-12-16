@@ -217,7 +217,18 @@ section:not(.hero) {
     overflow: hidden;
     display: flex;
     justify-content: center;
-}
+} 
+
+.heroPhotography {
+    width: 100%;
+    height: 100vh;
+    background: url("images/photography_img/photography_header_img.png");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+} 
 
 
 .name-heading {
