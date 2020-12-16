@@ -1,27 +1,25 @@
-const bodyElement = document.querySelector ('body');
-const menuToggle = document.querySelector ('.hamburger-menu');
-const heroElement = document.querySelector ('.hero');
-const navList = document.querySelector ('.nav-list');
 
-menu.Toggle.addEventListener ('click', function (){
-    bodyElement.classList.toggle('is-open');
-    heroElement.classList.add('is-open');
+// Add event listener on the nav-list then grab the item clicked
+navList.addEventListener("click", function (e) {
+    //Grabs the clicked element
+    let clickedElement = e.target;
+    //If the clicked item has a class of nav-link at index 0 then do something
+    if (clickedElement.classList[0] === "nav-link") {
+        bodyElement.classList.remove('is-open');
+    }
 });
-
-navList.addEventListener('click', function (e){
+/*
+Add event listener to the window object then check if the
+element clicked contains the class is-open.
+If so then remove it from both the body and hero to close
+the nav and remove the dark content overlay
+*/
+window.addEventListener('click', function (e) {
+    //Grabs the clicked element
     let clickedElement = e.target;
-    
-    if(clickedElement.classList(e) ==="nav-link"){
-        bodyElement.classList.remove('is-open')
+    //If the clicked element matches the class then do something
+    if (clickedElement.matches('.is-open')) {
+        bodyElement.classList.remove('is-open');
+        heroSection.classList.remove('is-open');
     }
-}};
-                         
-//Add eventlister to the window object to close nav when we click outside
-window.addEventListener('click', function (e){
-    let clickedElement = e.target;
-    
-    if (clickedElement.matches('.is-open')){
-        bodyElement.classList.remove ('is-open');
-        heroElement.classList.remove ('is-open');
-    }
-}};
+});
