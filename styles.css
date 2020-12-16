@@ -11,7 +11,7 @@
     --heading-font-family: 'DNS Sans', sans-serif, ;
     --light-color: #ffffff;
     --dark-color: #000000;
-    --light-gray-color: #efeff0;  /*experience colour*/
+    --light-gray-color: #efeff0; 
     --orange-color: #ec5453;
     --blue-color: #2c98f0;
     --yellow-color: #f9bf3f;
@@ -95,7 +95,7 @@ a{
 }
 
 .nav-item:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(3);
 }
 
 .nav-item:not(:last-child) {
