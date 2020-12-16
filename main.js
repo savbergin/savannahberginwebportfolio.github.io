@@ -34,5 +34,4 @@ window.addEventListener('click', function (e) {
     if (clickedElement.matches('.is-open')) {
         bodyElement.classList.remove('is-open');
         heroSection.classList.remove('is-open');
-    }
-});
+ }
