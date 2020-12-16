@@ -1,23 +1,28 @@
-let bodyElement = document.querySelector('body');
-let menuToggle = document.querySelector('.hamburger-menu');
+const bodyElement = root.querySelector('body');
+const menuToggle = root.querySelector('.hamburger-menu');
 //Do later
-let navList = document.querySelector('.nav-list');
+const navList = root.querySelector('.nav-list');
 //Do later
-let heroSection = document.querySelector('.hero');
+const heroElement = root.querySelector('.heroindex');
+const heroElement = root.querySelector('.heropc');
+const heroElement = root.querySelector('.heroFIMD');
+const heroElement = root.querySelector('.heroFOID');
+const heroElement = root.querySelector('.heroAudacity');
+const heroElement = root.querySelector('.heroPhotography');
 
 //Add event listener to the hamburger menu to toggle nav on and off and switch icons
-menuToggle.addEventListener('click', function () {
+menuToggle.addEventListener('click', fuction () {
     bodyElement.classList.toggle('is-open');
     //Do later
-    heroSection.classList.add('is-open');
+    heroElement.classList.add('is-open');
 });
 
 // Add event listener on the nav-list then grab the item clicked
 navList.addEventListener("click", function (e) {
     //Grabs the clicked element
-    let clickedElement = e.target;
+    clickedElement = e.target;
     //If the clicked item has a class of nav-link at index 0 then do something
-    if (clickedElement.classList[0] === "nav-link") {
+    (clickedElement.classList[0] === "nav-link") {
         bodyElement.classList.remove('is-open');
     }
 });
