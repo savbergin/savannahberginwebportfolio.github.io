@@ -95,7 +95,7 @@ a{
 }
 
 .nav-item:hover::after {
-    transform: scaleX(3);
+    transform: scaleX(1);
 }
 
 .nav-item:not(:last-child) {
@@ -901,10 +901,11 @@ textarea {
         transform: translateX(21rem);
     }
     .is-open .open {
-        display: none;
+        display: block;
     }
     .is-open .close {
         display: block;
+		
     }
 
 
